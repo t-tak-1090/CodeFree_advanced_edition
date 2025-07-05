@@ -1,0 +1,99 @@
+@use "../../global/forward" as fw;
+
+.p-flow {
+    margin-bottom: 90px;
+}
+
+.p-flow__title {
+    margin-bottom: 53px;
+}
+
+.p-flow__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    @include fw.mq("sp") {
+        display: block;
+        margin-bottom: 30px;
+        padding-left: 0;
+    }
+}
+
+.p-flow__item:last-child {
+    margin-bottom: 0;
+}
+
+.p-flow__item-circle {
+    position: relative;
+    margin-top: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #cb0000;
+}
+
+.p-flow__list .p-flow__item:nth-child(1) .p-flow__item-circle::before,
+.p-flow__list .p-flow__item:nth-child(2) .p-flow__item-circle::before,
+.p-flow__list .p-flow__item:nth-child(3) .p-flow__item-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 180px;
+    background-color: #cb0000;
+    @include fw.mq("sp") {
+        height: 280px;
+    }
+}
+
+.p-flow__list .p-flow__item:last-child .p-flow__item-circle::before,
+.p-flow__list .p-flow__item:last-child .p-flow__item-circle::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 1.5px);
+    width: 3px;
+    height: 30px;
+    border-radius: 9999px;
+    background-color: #cb0000;
+    transform-origin: 50% calc(100% - 1.5px);
+    @include fw.mq("sp") {
+        top: 103px;
+    }
+}
+
+.p-flow__list .p-flow__item:last-child .p-flow__item-circle::before {
+    transform: rotate(38.5deg);
+}
+
+.p-flow__list .p-flow__item:last-child .p-flow__item-circle::after {
+    transform: rotate(-38.5deg);
+}
+
+.p-flow__item-text {
+    flex: 1;
+    margin-left: 50px;
+    color: #cb0000;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: calc(33 / 22);
+    @include fw.mq("sp") {
+        display: inline-block;
+        margin-left: 20px;
+    }
+}
+
+.p-flow__item-description {
+    flex: 2.5;
+    margin-top: 3px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(30 / 18);
+    @include fw.mq("sp") {
+        font-size: 1.6rem;
+        padding-left: 45px;
+    }
+}
