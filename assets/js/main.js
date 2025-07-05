@@ -24,3 +24,23 @@ navLinks.forEach(link => {
         nav.classList.remove('open');
     });
 });
+
+// 生徒さんたちの声のスライダー
+const swiper = new Swiper('.swiper', {
+    centeredSlides: true,
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 35,
+    navigation: {
+        nextEl: '.swiper-container .swiper-button-next',
+        prevEl: '.swiper-container .swiper-button-prev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        769: {
+            slidesPerView: 3,
+        }
+    }
+});
