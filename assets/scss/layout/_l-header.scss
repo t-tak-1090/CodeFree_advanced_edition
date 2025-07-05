@@ -17,6 +17,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 0.5s;
+}
+
+.l-header__logo a:hover {
+    opacity: 0.5;
 }
 
 .l-header__logo img {
