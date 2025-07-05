@@ -1,1 +1,12 @@
 @use "../../global/forward" as fw;
+
+.c-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: calc(50 / 30);
+    text-align: center;
+    @include fw.mq("sp") {
+        font-size: 2.5rem;
+        line-height: calc(40 / 25);
+    }
+}
