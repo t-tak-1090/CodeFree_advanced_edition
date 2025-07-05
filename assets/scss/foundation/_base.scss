@@ -1,0 +1,22 @@
+@use "../global/forward" as fw;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #000;
+    font-size: 1.6rem;
+    font-family: "yu-gothic-pr6n", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a,
+span {
+    display: inline-block;
+}
