@@ -1,0 +1,34 @@
+@use "../../global/forward" as fw;
+
+.p-fv {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.p-fv__bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #505050, $alpha: 0.5);
+}
+
+.p-fv__title {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: calc(60 / 40);
+    text-align: center;
+    @include fw.mq("sp") {
+        font-size: 3rem;
+        line-height: calc(50 / 30);
+    }
+}
