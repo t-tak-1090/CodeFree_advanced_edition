@@ -1,0 +1,73 @@
+@use "../../global/forward" as fw;
+
+.p-blog {
+    margin-bottom: 200px;
+}
+
+.p-blog__title {
+    margin-bottom: 40px;
+}
+
+.p-blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 40px;
+    @include fw.mq(sp) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.p-blog__card {
+    transition: opacity 0.3s ease;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.p-blog__card-img {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.p-blog__card-category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    padding: 5px 10px;
+    background-color: #cb0000;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: calc(25 / 15);
+    text-align: center;
+}
+
+.p-blog__card-title {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: calc(25 / 20);
+}
+
+.p-blog__card-date {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: calc(30 / 17);
+    text-align: right;
+}
+
+.p-blog__link {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(30 / 18);
+    text-decoration: underline;
+    @include fw.mq(sp) {
+        margin-inline: auto;
+    }
+}
