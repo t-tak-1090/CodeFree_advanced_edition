@@ -44,3 +44,27 @@ const swiper = new Swiper('.swiper', {
         }
     }
 });
+
+// アコーディオン
+document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".p-faq__accordion-item");
+
+    items.forEach((item) => {
+        const button = item.querySelector(".p-faq__accordion-question");
+        const symbol = button.querySelector(".p-faq__accordion-symbol");
+
+        button.addEventListener("click", () => {
+            const isOpen = item.classList.contains("open");
+
+            // すべて閉じる（アコーディオン方式）
+            items.forEach((el) => {
+                el.classList.remove("open");
+            });
+
+            // クリックしたものだけ開ける
+            if (!isOpen) {
+                item.classList.add("open");
+            }
+        });
+    });
+});
