@@ -1,0 +1,108 @@
+@use "../../global/forward" as fw;
+
+.p-btn__contact {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px 20px 10px 20px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: calc(33 / 20);
+    text-align: center;
+    background-color: #cb0000;
+    transition: background-color .3s;
+    opacity: 0;
+    visibility: hidden;
+    @include fw.mq(sp) {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+.p-btn__contact:hover {
+    background-color: #fff;
+    color: #cb0000;
+}
+
+.p-btn__contact.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.p-btn__contact.is-stopped {
+    position: fixed;
+}
+
+.p-btn__back-to-top {
+    position: fixed;
+    right: 115px;
+    bottom: 90px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    background: rgb(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    @include fw.mq(sp) {
+        right: 20px;
+    }
+}
+
+.p-btn__back-to-top:hover {
+    background: #fff;
+}
+
+.p-btn__back-to-top.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.p-btn__arrow {
+    position: relative;
+    width: 5px;
+    height: 0px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+}
+
+.p-btn__back-to-top:hover .p-btn__arrow {
+    background-color: #000;
+}
+
+.p-btn__arrow::before,
+.p-btn__arrow::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 2.5px);
+    width: 5px;
+    height: 18.8px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    transform-origin: 50% 2.5px;
+}
+
+.p-btn__back-to-top:hover .p-btn__arrow::before,
+.p-btn__back-to-top:hover .p-btn__arrow::after {
+    background-color: #000;
+}
+
+.p-btn__arrow::before {
+    transform: rotate(38.15deg);
+}
+
+.p-btn__arrow::after {
+    transform: rotate(-38.15deg);
+}

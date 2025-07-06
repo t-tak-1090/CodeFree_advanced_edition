@@ -1,1 +1,31 @@
 @use "../global/forward" as fw;
+
+.l-footer {
+    padding: 45px 0 50px 0;
+    background-color: #cb0000;
+}
+
+.l-footer__inner {
+    max-width: 880px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.l-footer__logo {
+    width: 32px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.l-footer__logo:hover {
+    opacity: 0.5;
+}
+
+.l-footer__copyright {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: calc(33 / 15);
+    text-align: center;
+}

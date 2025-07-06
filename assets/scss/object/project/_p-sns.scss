@@ -1,0 +1,17 @@
+@use "../../global/forward" as fw;
+
+.p-sns__list {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.p-sns__item {
+    width: 20px;
+    transition: .3s;
+}
+
+.p-sns__item:hover {
+    opacity: 0.5;
+}
+

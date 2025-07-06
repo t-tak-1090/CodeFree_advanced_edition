@@ -23,6 +23,8 @@
 @use "object/project/p-nav";
 // ハンバーガーボタンCSS
 @use "object/project/p-hamburger";
+// ページトップボタンCSS
+@use "object/project/p-btn";
 // ファーストビューCSS
 @use "object/project/p-fv";
 // コンセプトCSS
@@ -37,6 +39,8 @@
 @use "object/project/p-faq";
 // ブログCSS
 @use "object/project/p-blog";
+// SNSCSS
+@use "object/project/p-sns";
 
 // componentフォルダ
 // タイトルCSS
