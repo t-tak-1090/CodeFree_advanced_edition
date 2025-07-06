@@ -25,6 +25,47 @@ navLinks.forEach(link => {
     });
 });
 
+// TOPへ戻るボタン
+const backToTopBtn = document.querySelector("#js-backToTop");
+const contactBtn = document.querySelector(".p-btn__contact");
+const footer = document.querySelector("#js-footer");
+
+function scroll_top() {
+    window.scroll({ top: 0, behavior: "smooth" });
+}
+backToTopBtn.addEventListener("click", scroll_top);
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const footerTop = footer.getBoundingClientRect().top + scrollY;
+    const footerHeight = footer.offsetHeight;
+
+    // 表示制御
+    if (scrollY > 100) {
+        backToTopBtn.classList.add('is-active');
+        contactBtn.classList.add('is-active');
+    } else {
+        backToTopBtn.classList.remove('is-active');
+        contactBtn.classList.remove('is-active');
+    }
+
+    // フッターとの重複を防ぐ
+    const contactBottom = scrollY + windowHeight;
+    const contactHeight = contactBtn.offsetHeight;
+    
+    if (contactBottom >= footerTop) {
+        // フッターと重複する場合、フッターの上に配置
+        contactBtn.classList.add('is-stopped');
+        const offset = contactBottom - footerTop; // 20pxの余白を追加
+        contactBtn.style.bottom = `${offset}px`;
+    } else {
+        // 通常の位置に戻す
+        contactBtn.classList.remove('is-stopped');
+        contactBtn.style.bottom = `0px`;
+    }
+});
+
 // 生徒さんたちの声のスライダー
 const swiper = new Swiper('.swiper', {
     centeredSlides: true,

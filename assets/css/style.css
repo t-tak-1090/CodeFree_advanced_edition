@@ -589,6 +589,37 @@ span {
   }
 }
 
+.l-footer {
+  padding: 45px 0 50px 0;
+  background-color: #cb0000;
+}
+
+.l-footer__inner {
+  max-width: 880px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.l-footer__logo {
+  width: 32px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.l-footer__logo:hover {
+  opacity: 0.5;
+}
+
+.l-footer__copyright {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.2;
+  text-align: center;
+}
+
 .l-inner {
   max-width: 880px;
   margin: 0 auto;
@@ -730,6 +761,33 @@ span {
   }
 }
 
+.p-nav__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 33px;
+  margin-bottom: 20px;
+}
+
+.p-nav__footer-item a {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.9411764706;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.p-nav__footer-item a:hover {
+  opacity: 0.5;
+}
+
 .p-hamburger {
   display: none;
 }
@@ -806,6 +864,129 @@ span {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
+}
+
+.p-btn__contact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px 20px 10px 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.65;
+  text-align: center;
+  background-color: #cb0000;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+@media screen and (max-width: 767px) {
+  .p-btn__contact {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+.p-btn__contact:hover {
+  background-color: #fff;
+  color: #cb0000;
+}
+
+.p-btn__contact.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.p-btn__contact.is-stopped {
+  position: fixed;
+}
+
+.p-btn__back-to-top {
+  position: fixed;
+  right: 115px;
+  bottom: 90px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 68px;
+  height: 68px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .p-btn__back-to-top {
+    right: 20px;
+  }
+}
+
+.p-btn__back-to-top:hover {
+  background: #fff;
+}
+
+.p-btn__back-to-top.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.p-btn__arrow {
+  position: relative;
+  width: 5px;
+  height: 0px;
+  border-radius: 9999px;
+  background-color: #ffffff;
+}
+
+.p-btn__back-to-top:hover .p-btn__arrow {
+  background-color: #000;
+}
+
+.p-btn__arrow::before,
+.p-btn__arrow::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: calc(50% - 2.5px);
+  width: 5px;
+  height: 18.8px;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  -webkit-transform-origin: 50% 2.5px;
+          transform-origin: 50% 2.5px;
+}
+
+.p-btn__back-to-top:hover .p-btn__arrow::before,
+.p-btn__back-to-top:hover .p-btn__arrow::after {
+  background-color: #000;
+}
+
+.p-btn__arrow::before {
+  -webkit-transform: rotate(38.15deg);
+          transform: rotate(38.15deg);
+}
+
+.p-btn__arrow::after {
+  -webkit-transform: rotate(-38.15deg);
+          transform: rotate(-38.15deg);
 }
 
 .p-fv {
@@ -1495,6 +1676,26 @@ span {
   .p-blog__link {
     margin-inline: auto;
   }
+}
+
+.p-sns__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+}
+
+.p-sns__item {
+  width: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.p-sns__item:hover {
+  opacity: 0.5;
 }
 
 .c-title {
