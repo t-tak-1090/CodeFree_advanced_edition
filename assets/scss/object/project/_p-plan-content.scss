@@ -1,0 +1,19 @@
+@use "../../global/forward" as fw;
+
+.p-plan-content {
+    margin-bottom: 220px;
+}
+
+.p-plan-content__title {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+
+.p-plan-content__description {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: calc(25 / 17);
+}

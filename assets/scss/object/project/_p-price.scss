@@ -1,0 +1,49 @@
+@use "../../global/forward" as fw;
+
+.p-price {
+    margin-bottom: 60px;
+}
+
+.p-price__title {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+
+.p-price__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    @include fw.mq(sp) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.p-price__flex p {
+    width: 100%;
+    max-width: 210px;
+    padding: 15px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: calc(33 / 20);
+    background-color: #cb0000;
+    text-align: center;
+}
+
+.p-price__flex span {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: calc(33 / 20);
+}
+
+.p-price__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(30 / 18);
+}
