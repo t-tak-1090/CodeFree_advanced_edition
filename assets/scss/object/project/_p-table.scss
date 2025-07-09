@@ -1,0 +1,141 @@
+@use "../../global/forward" as fw;
+
+.p-table {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.p-table::-webkit-scrollbar {
+    height: 23px;
+    background-color: rgb(80, 80, 80, 0.15);
+}
+
+.p-table::-webkit-scrollbar-track {
+    
+}
+
+.p-table::-webkit-scrollbar-thumb {
+    width: 100px;
+    background-color: rgb(80, 80, 80, 0.25);
+}
+
+.p-table table {
+    width: 100%;
+}
+
+.p-table__head th {
+    vertical-align: bottom;
+}
+
+.p-table__head {
+    border-bottom: 0.5px solid #000;
+}
+
+.p-table__head-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: calc(33 / 20);
+    @include fw.mq(sp) {
+        width: 170px;
+        text-align: center;
+    }
+}
+
+.p-table__head--black {
+    background-color: #000;
+}
+
+.p-table__head--red {
+    background-color: #f00;
+}
+
+.p-table__head--red span {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: calc(33 / 17);
+}
+
+.p-table__data th,
+.p-table__data td {
+    height: 85px;
+    vertical-align: middle;
+}
+
+.p-table__data th {
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+.p-table__data td {
+    text-align: center;
+    border-left: 0.5px solid #000;
+}
+
+.p-table__data:first-child ~ .p-table__data { /* 2行目以降のth,td */
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: calc(25 / 17);
+}
+
+.p-table__data:nth-child(even) {
+    background-color: rgb(80, 80, 80, 0.15);
+}
+
+.p-table__data:last-child th,
+.p-table__data:last-child td {
+    border-bottom: 0.5px solid #000;
+}
+
+.p-table__text {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+}
+
+.p-table__text--bold {
+    font-weight: 700;
+}
+
+.p-table__text--red {
+    color: #cb0000;
+}
+
+.p-table__data-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.p-table__circle {
+    width: 15px;
+    height: 15px;
+    margin-inline: auto;
+    border-radius: 50%;
+}
+
+.p-table__circle--black {
+    background-color: #000;
+}
+
+.p-table__circle--red {
+    background-color: #cb0000;
+}
+
+.p-table__bar {
+    display: block;
+    width: 30px;
+    height: 1px;
+    margin-inline: auto;
+    background-color: #707070;
+}

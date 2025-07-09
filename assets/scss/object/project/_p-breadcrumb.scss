@@ -1,0 +1,31 @@
+@use "../../global/forward" as fw;
+
+.p-breadcrumb {
+    font-weight: 500;
+    line-height: calc(33 / 16);
+    padding: 10px 0 10px 100px;
+    background-color: #e8e8e8;
+}
+
+.p-breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+.p-breadcrumb li + li::before {
+    content: ">";
+    margin-inline: 18px;
+}
+
+.p-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.p-breadcrumb li span {
+    font-weight: bold;
+}

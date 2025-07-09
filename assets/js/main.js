@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
     // フッターとの重複を防ぐ
     const contactBottom = scrollY + windowHeight;
     const contactHeight = contactBtn.offsetHeight;
-    
+
     if (contactBottom >= footerTop) {
         // フッターと重複する場合、フッターの上に配置
         contactBtn.classList.add('is-stopped');
@@ -108,4 +108,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+});
+
+// scrollhint
+new ScrollHint(".js-scroll", {
+    i18n: {
+        scrollable: "横スクロール",
+    },
 });

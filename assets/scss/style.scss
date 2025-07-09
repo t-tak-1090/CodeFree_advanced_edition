@@ -25,6 +25,8 @@
 @use "object/project/p-hamburger";
 // ページトップボタンCSS
 @use "object/project/p-btn";
+// パンくずリストCSS
+@use "object/project/p-breadcrumb";
 // ファーストビューCSS
 @use "object/project/p-fv";
 // コンセプトCSS
@@ -41,6 +43,14 @@
 @use "object/project/p-blog";
 // SNSCSS
 @use "object/project/p-sns";
+// プラン・料金CSS
+@use "object/project/p-plan";
+// 料金体系CSS
+@use "object/project/p-price";
+// プラン内容・月額料金CSS
+@use "object/project/p-plan-content";
+// 料金表CSS
+@use "object/project/p-table";
 
 // componentフォルダ
 // タイトルCSS
