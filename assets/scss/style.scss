@@ -27,6 +27,8 @@
 @use "object/project/p-btn";
 // パンくずリストCSS
 @use "object/project/p-breadcrumb";
+// ページネーションCSS
+@use "object/project/p-pagination";
 // ファーストビューCSS
 @use "object/project/p-fv";
 // コンセプトCSS
@@ -44,13 +46,15 @@
 // SNSCSS
 @use "object/project/p-sns";
 // プラン・料金CSS
-@use "object/project/p-plan";
+@use "object/project/p-theme";
 // 料金体系CSS
 @use "object/project/p-price";
 // プラン内容・月額料金CSS
 @use "object/project/p-plan-content";
 // 料金表CSS
 @use "object/project/p-table";
+// ブログ一覧CSS
+@use "object/project/p-blog-list";
 
 // componentフォルダ
 // タイトルCSS

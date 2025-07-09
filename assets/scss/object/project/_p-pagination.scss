@@ -1,0 +1,44 @@
+@use "../../global/forward" as fw;
+
+.p-pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 210px;
+    @include fw.mq("sp") {
+        margin-bottom: 200px;
+    }
+}
+
+.p-pagination__list {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.p-pagination__item {
+    display: inline-block;
+    padding: 8px 14px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(30 / 18);
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.p-pagination__item:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.p-pagination__dots {
+    display: inline-block;
+    padding: 8px 14px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(30 / 18);
+}
