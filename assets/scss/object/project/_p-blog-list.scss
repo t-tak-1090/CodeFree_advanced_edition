@@ -1,0 +1,85 @@
+@use "../../global/forward" as fw;
+
+.p-blog-list {
+    margin-bottom: 70px;
+}
+
+.p-blog-list__title {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+
+.p-blog-list__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 70px;
+}
+
+.p-blog-list__link {
+    display: flex;
+    gap: 50px;
+    transition: opacity 0.3s;
+    @include fw.mq("sp") {
+        flex-direction: column;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.p-blog-list__img {
+    position: relative;
+    width: calc(260 / 980 * 100%);
+    @include fw.mq("sp") {
+        width: 100%;
+    }
+}
+
+.p-blog-list__img span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: calc(25 / 15);
+    background-color: #cb0000;
+}
+
+.p-blog-list__contents {
+    width: calc(570 / 980 * 100%);
+    @include fw.mq("sp") {
+        width: 100%;
+    }
+}
+
+.p-blog-list__contents h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: calc(25 / 20);
+}
+
+.p-blog-list__contents time {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: calc(30 / 17);
+    @include fw.mq("sp") {
+        display: block;
+        text-align: right;
+    }
+}
+
+.p-blog-list__contents p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(30 / 18);
+}

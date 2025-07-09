@@ -1,15 +1,15 @@
 @use "../../global/forward" as fw;
 
-.p-plan {
+.p-theme {
     position: relative;
     margin-bottom: 70px;
 }
 
-.p-plan__img {
+.p-theme__img {
     position: relative;
 }
 
-.p-plan__img::after {
+.p-theme__img::after {
     content: "";
     position: absolute;
     top: 0;
@@ -19,7 +19,7 @@
     background-color: rgb(80, 80, 80, 0.5);
 }
 
-.p-plan__title {
+.p-theme__title {
     position: absolute;
     top: 50%;
     left: 50%;

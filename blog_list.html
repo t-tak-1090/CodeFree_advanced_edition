@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>きたむらミュージックスクール</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="きたむらミュージックスクールは、「音楽で生きる」を叶えるスクールです。">
+    <!-- cssの読み込み -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- scrollhint -->
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header id="header" class="l-header">
+        <div class="l-header__inner">
+            <h1 class="l-header__logo">
+                <a href="index.html">
+                    <img src="assets/img/header/header-icon.svg" alt="きたむらミュージックスクール">
+                    <div class="l-header__logo-name">
+                        <span>きたむら</span>
+                        <span>ミュージックスクール</span>
+                    </div>
+                </a>
+            </h1>
+
+            <!-- PCナビゲーション -->
+            <nav class="p-nav-pc">
+                <ul class="p-nav-pc__list">
+                    <li class="p-nav-pc__item"><a href="">料金</a></li>
+                    <li class="p-nav-pc__item"><a href="">ブログ</a></li>
+                    <li class="p-nav-pc__item"><a href="">卒業実績</a></li>
+                    <li class="p-nav-pc__contact"><a href="">お問い合わせ</a></li>
+                </ul>
+            </nav>
+
+            <!-- SPナビゲーション -->
+            <nav class="p-nav-sp">
+                <ul class="p-nav-sp__list">
+                    <li class="p-nav-sp__item"><a href="">料金</a></li>
+                    <li class="p-nav-sp__item"><a href="">ブログ</a></li>
+                    <li class="p-nav-sp__item"><a href="">卒業実績</a></li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーボタン -->
+            <button id="js-hamburger" class="p-hamburger">
+                <span class="p-hamburger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ページトップボタン -->
+        <button id="js-backToTop" class="p-btn__back-to-top"><span class="p-btn__arrow"></span></button>
+
+        <!-- お問い合わせボタン -->
+        <a href="" class="p-btn__contact">お問い合わせ</a>
+
+        <!-- プラン・料金 -->
+        <section class="p-theme">
+            <div class="p-theme__img">
+                <picture>
+                    <source srcset="assets/img/blog-list/blog-sp.jpg" media="(max-width: 767px)">
+                    <source srcset="assets/img/blog-list/blog.jpg" media="(min-width: 768px)">
+                    <img src="assets/img/blog-list/blog.jpg" alt="散りばめられた楽譜">
+                </picture>
+                <h2 class="p-theme__title">ブログ</h2>
+            </div>
+            <!-- パンくずリスト -->
+            <nav class="p-breadcrumb">
+                <ol class="p-breadcrumb__list">
+                    <li class="p-breadcrumb__item"><a href="">ホーム</a></li>
+                    <li class="p-breadcrumb__item"><span>ブログ</span></li>
+                </ol>
+            </nav>
+        </section>
+
+        <!-- ブログ一覧 -->
+        <section class="p-blog-list">
+            <div class="l-inner">
+                <h3 class="p-blog-list__title">ブログ一覧</h3>
+
+                <ul class="p-blog-list__list">
+                    <li class="p-blog-list__item">
+                        <a class="p-blog-list__link" href="">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog03.jpg" alt="">
+                                <span>ギター</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>アルペジオが劇的に向上する3つの習慣</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                        <a class="p-blog-list__link" href="">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog02.jpg" alt="">
+                                <span>集客方法</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>集客してる間は売れないという法則</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                        <a class="p-blog-list__link" href="">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog01.jpg" alt="">
+                                <span>SNS</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>フォロワーではなくファンを増やせとは？</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                        <a class="p-blog-list__link" href="">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog03.jpg" alt="">
+                                <span>ギター</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>アルペジオが劇的に向上する3つの習慣</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                        <a href="" class="p-blog-list__link">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog02.jpg" alt="">
+                                <span>集客方法</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>集客してる間は売れないという法則</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                        <a class="p-blog-list__link" href="">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog01.jpg" alt="">
+                                <span>SNS</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>フォロワーではなくファンを増やせとは？</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                        <a class="p-blog-list__link" href="">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog03.jpg" alt="">
+                                <span>ギター</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>アルペジオが劇的に向上する3つの習慣</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                        <a class="p-blog-list__link" href="">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog02.jpg" alt="">
+                                <span>集客方法</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>集客してる間は売れないという法則</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                        <a class="p-blog-list__link" href="">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog01.jpg" alt="">
+                                <span>SNS</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>フォロワーではなくファンを増やせとは？</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="p-blog-list__item">
+                            <a href="" class="p-blog-list__link">
+                            <div class="p-blog-list__img">
+                                <img src="assets/img/top/blog/blog03.jpg" alt="">
+                                <span>ギター</span>
+                            </div>
+                            <div class="p-blog-list__contents">
+                                <h4>アルペジオが劇的に向上する3つの習慣</h4>
+                                <time datetime="0000-00-00">0000.00.00</time>
+                                <p>
+                                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ページネーション -->
+        <nav class="p-pagination">
+            <ul class="p-pagination__list">
+                <li><a href="#" class="p-pagination__item">1</a></li>
+                <li><a href="#" class="p-pagination__item">2</a></li>
+                <li><a href="#" class="p-pagination__item">3</a></li>
+                <li><span class="p-pagination__dots">…</span></li>
+                <li><a href="#" class="p-pagination__item">9</a></li>
+            </ul>
+        </nav>
+
+    </main>
+
+    <footer id="js-footer" class="l-footer">
+        <div class="l-footer__inner">
+            <ul class="p-nav__footer">
+                <li class="p-nav__footer-item"><a class="p-nav__footer-link" href="">ホーム</a></li>
+                <li class="p-nav__footer-item"><a class="p-nav__footer-link" href="">料金</a></li>
+                <li class="p-nav__footer-item"><a class="p-nav__footer-link" href="">ブログ</a></li>
+                <li class="p-nav__footer-item"><a class="p-nav__footer-link" href="">卒業実績</a></li>
+            </ul>
+            <div class="l-footer__logo">
+                <a href="">
+                    <img src="assets/img/footer/logo-white.svg" alt="ロゴ">
+                </a>
+            </div>
+            <p class="l-footer__copyright">Copyright &copy; 0000 KITAMURA music school Inc. All Rights</p>
+            <ul class="p-sns__list">
+                <li class="p-sns__item"><a class="p-sns__link" href=""><img src="assets/img/footer/icon-twitter.svg" alt="Twitter"></a></li>
+                <li class="p-sns__item"><a class="p-sns__link" href=""><img src="assets/img/footer/icon-instagram.svg" alt="Facebook"></a></li>
+                <li class="p-sns__item"><a class="p-sns__link" href=""><img src="assets/img/footer/icon-youtube.svg" alt="Youtube"></a></li>
+                <li class="p-sns__item"><a class="p-sns__link" href=""><img src="assets/img/footer/icon-facebook.svg" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- scrollhint -->
+    <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- jsの読み込み -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

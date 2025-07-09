@@ -61,18 +61,22 @@
         <a href="" class="p-btn__contact">お問い合わせ</a>
 
         <!-- プラン・料金 -->
-        <section class="p-plan">
-            <div class="p-plan__img">
-                <img src="assets/img/plan/plan.jpg" alt="PCを使用して音楽制作を行う人">
-                <h2 class="p-plan__title">プラン・料金</h2>
+        <section class="p-theme">
+            <div class="p-theme__img">
+                <picture>
+                    <source srcset="assets/img/plan/plan-sp.jpg" media="(max-width: 767px)">
+                    <source srcset="assets/img/plan/plan.jpg" media="(min-width: 768px)">
+                    <img src="assets/img/plan/plan.jpg" alt="PCを使用して音楽制作を行う人">
+                </picture>
+                <h2 class="p-theme__title">プラン・料金</h2>
             </div>
-                <!-- パンくずリスト -->
-                <nav class="p-breadcrumb">
-                    <ol class="p-breadcrumb__list">
-                        <li class="p-breadcrumb__item"><a href="">ホーム</a></li>
-                        <li class="p-breadcrumb__item"><span>プラン・料金</span></li>
-                    </ol>
-                </nav>
+            <!-- パンくずリスト -->
+            <nav class="p-breadcrumb">
+                <ol class="p-breadcrumb__list">
+                    <li class="p-breadcrumb__item"><a href="">ホーム</a></li>
+                    <li class="p-breadcrumb__item"><span>プラン・料金</span></li>
+                </ol>
+            </nav>
         </section>
 
         <!-- 料金体系 -->
